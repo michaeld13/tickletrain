@@ -1,0 +1,21 @@
+#php_flag register_globals off
+#php_value date.timezone "America/Chicago"
+#php_value max_execution_time 200
+#php_value open_basedir none
+#php_value upload_max_filesize 50M
+#php_value post_max_size 21M
+
+
+DirectoryIndex index.php
+RewriteEngine On
+#RewriteCond %{HTTP_HOST} !^tickletrain\.com [NC]
+#RewriteRule ^(.*)  http://tickletrain.com/new/$1 [L,R=301]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#RewriteBase /new/
+RewriteRule ^$ index.php?u=home [L,NC,QSA]
+RewriteRule ^fb\/([^\.\/]+)\/$ fb/fb_$1.php [L,NC,QSA]
+RewriteRule ^dashboard\/$ index.php?u=home [L,NC,QSA]
+RewriteRule ^([^\.\/]+)\/$ index.php?u=$1 [L,NC,QSA]

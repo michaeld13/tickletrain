@@ -1,0 +1,15 @@
+<?php
+include("class/class-db.php");
+# define the connection string
+define('DB_CONNECTIONSTRING','mysqlidb://tickletrain_5;localhost;tikletrain5_user;tickle;');
+$db = db::getInstance(DB_CONNECTIONSTRING);
+# put on the devel mode (3 will print all queries and errors)
+$db->beverbose = 1;
+mysqli_query($db->conn,"SET NAMES utf8");
+
+$ImapServerName = "{mail.tickletrain.com:143/imap/notls}INBOX"; // For a IMAP connection    (PORT 143)
+$ImapUserName = "ticklein@tickletrain.com";
+$ImapPassWord = "change88q1w2e3r4";
+$ImapMove = "INBOX.Read";
+$RootFolder = "";
+?>

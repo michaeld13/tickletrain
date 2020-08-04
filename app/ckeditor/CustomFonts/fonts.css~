@@ -1,0 +1,5 @@
+@font-face {  
+   font-family: "Calibri-font";  
+   /*src: url(/ckeditor/Customfonts/SourceSansPro-Regular.eot);  */  
+   src: local("Calibri-font"), url("Calibri.ttf") format("truetype"); /*non-IE*/  
+}

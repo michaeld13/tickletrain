@@ -1,0 +1,38 @@
+#ticker {
+
+    height: 44px;
+    padding: 0 16px;
+    overflow: hidden;
+
+}
+
+#ticker li {
+
+    height: 43px;
+
+}
+.btn_downgrade{
+    background: url(http://client.tickletrain.com/app/img/downgrade-plan.png) no-repeat;
+    width: 125px;
+    height: 34px;
+    border: 0px solid;
+   
+}
+
+.btn_downgrade1{
+    background: url(http://client.tickletrain.com/app/img/proceed.jpg) no-repeat;
+    width: 125px;
+    height: 34px;
+    border: 0px solid;
+   
+}
+
+#tickerdiv {
+    width:456px;
+    float: left;
+    padding: 5px;
+    margin: 16px 0px 0 56px;
+    font: normal 10px/16px Arial, Helvetica, sans-serif;
+    border: 1px solid #ccc;
+    background: #FFFACD
+}

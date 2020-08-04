@@ -1,0 +1,115 @@
+13.07.2016 06:48:01 > mbox: Resource id #10
+13.07.2016 06:48:01 > imap check: 0
+13.07.2016 06:48:01 > msgs count: 0
+13.07.2016 06:48:01 > imap_close
+13.07.2016 06:48:01 > found 0 for schedule changing
+13.07.2016 06:50:02 > mbox: Resource id #10
+13.07.2016 06:50:02 > imap check: 0
+13.07.2016 06:50:02 > msgs count: 0
+13.07.2016 06:50:02 > imap_close
+13.07.2016 06:50:02 > found 0 for schedule changing
+13.07.2016 06:52:02 > mbox: Resource id #10
+13.07.2016 06:52:02 > imap check: 0
+13.07.2016 06:52:02 > msgs count: 0
+13.07.2016 06:52:02 > imap_close
+13.07.2016 06:52:02 > found 0 for schedule changing
+13.07.2016 06:54:01 > mbox: Resource id #10
+13.07.2016 06:54:01 > imap check: 0
+13.07.2016 06:54:01 > msgs count: 0
+13.07.2016 06:54:01 > imap_close
+13.07.2016 06:54:01 > found 0 for schedule changing
+13.07.2016 06:56:02 > mbox: Resource id #10
+13.07.2016 06:56:02 > imap check: 0
+13.07.2016 06:56:02 > msgs count: 0
+13.07.2016 06:56:02 > imap_close
+13.07.2016 06:56:02 > found 0 for schedule changing
+13.07.2016 06:58:01 > mbox: Resource id #10
+13.07.2016 06:58:01 > imap check: 0
+13.07.2016 06:58:01 > msgs count: 0
+13.07.2016 06:58:01 > imap_close
+13.07.2016 06:58:01 > found 0 for schedule changing
+13.07.2016 07:00:01 > mbox: Resource id #10
+13.07.2016 07:00:01 > imap check: 0
+13.07.2016 07:00:01 > msgs count: 0
+13.07.2016 07:00:02 > imap_close
+13.07.2016 07:00:02 > found 0 for schedule changing
+13.07.2016 07:02:01 > mbox: Resource id #10
+13.07.2016 07:02:01 > imap check: 0
+13.07.2016 07:02:01 > msgs count: 0
+13.07.2016 07:02:01 > imap_close
+13.07.2016 07:02:02 > found 0 for schedule changing
+13.07.2016 07:04:01 > mbox: Resource id #10
+13.07.2016 07:04:01 > imap check: 0
+13.07.2016 07:04:01 > msgs count: 0
+13.07.2016 07:04:01 > imap_close
+13.07.2016 07:04:01 > found 0 for schedule changing
+13.07.2016 07:06:01 > mbox: Resource id #10
+13.07.2016 07:06:01 > imap check: 0
+13.07.2016 07:06:01 > msgs count: 0
+13.07.2016 07:06:01 > imap_close
+13.07.2016 07:06:02 > found 0 for schedule changing
+13.07.2016 07:08:01 > mbox: Resource id #10
+13.07.2016 07:08:01 > imap check: 1
+13.07.2016 07:08:01 > msgs count: 1
+13.07.2016 07:08:01 > Tickletitle: 123shine
+13.07.2016 07:08:01 > Tickle_Username: somsuneh
+13.07.2016 07:08:01 > Found 1 'to' addresses
+13.07.2016 07:08:01 > Rawmail: /var/www/vhosts/client.tickletrain.com/httpdocs/mail/20160713/96392.txt
+13.07.2016 07:08:01 > Task creation for 1137
+13.07.2016 07:08:01 > time: 1 (1468480081)
+13.07.2016 07:08:01 > time: 2 (1468566481)
+13.07.2016 07:08:01 > time: 3 (1468652881)
+13.07.2016 07:08:01 > time: 6 (1468912081)
+13.07.2016 07:08:01 > time: 7 (1468998481)
+13.07.2016 07:08:01 > time: 8 (1469084881)
+13.07.2016 07:08:01 > time: 9 (1469171281)
+13.07.2016 07:08:01 > time: 10 (1469257681)
+13.07.2016 07:08:01 > time: 13 (1469516881)
+13.07.2016 07:08:01 > time: 14 (1469603281)
+13.07.2016 07:08:01 > time: 15 (1469689681)
+13.07.2016 07:08:01 > mailmove - INBOX.Read
+13.07.2016 07:08:01 > mail process end
+13.07.2016 07:08:01 > imap_close
+13.07.2016 07:08:01 > found 0 for schedule changing
+13.07.2016 07:10:02 > mbox: Resource id #10
+13.07.2016 07:10:02 > imap check: 0
+13.07.2016 07:10:02 > msgs count: 0
+13.07.2016 07:10:02 > imap_close
+13.07.2016 07:10:02 > found 0 for schedule changing
+13.07.2016 07:12:01 > mbox: Resource id #10
+13.07.2016 07:12:01 > imap check: 0
+13.07.2016 07:12:01 > msgs count: 0
+13.07.2016 07:12:01 > imap_close
+13.07.2016 07:12:01 > found 0 for schedule changing
+13.07.2016 07:14:01 > mbox: Resource id #10
+13.07.2016 07:14:01 > imap check: 0
+13.07.2016 07:14:01 > msgs count: 0
+13.07.2016 07:14:01 > imap_close
+13.07.2016 07:14:01 > found 1 for schedule changing
+13.07.2016 07:14:01 > Task 840931 changed to 2016-07-14 07:09:00 (GMT)
+13.07.2016 07:14:01 > Update Campaign Time Query 5 update task set TaskInitiateDate='2016-07-14 12:39:00', TaskGMDate='2016-07-14 07:09:00' where TaskID=840931
+13.07.2016 07:14:01 > Task 840932 changed to 2016-07-15 06:30:00 (GMT)
+13.07.2016 07:14:01 > Update Campaign Time Query 5 update task set TaskInitiateDate='2016-07-15 12:00:00', TaskGMDate='2016-07-15 06:30:00' where TaskID=840932
+13.07.2016 07:14:01 > Task 840933 changed to 2016-07-18 06:30:00 (GMT)
+13.07.2016 07:14:01 > Update Campaign Time Query 5 update task set TaskInitiateDate='2016-07-18 12:00:00', TaskGMDate='2016-07-18 06:30:00' where TaskID=840933
+13.07.2016 07:14:01 > Task 840934 changed to 2016-07-19 06:30:00 (GMT)
+13.07.2016 07:14:01 > Update Campaign Time Query 5 update task set TaskInitiateDate='2016-07-19 12:00:00', TaskGMDate='2016-07-19 06:30:00' where TaskID=840934
+13.07.2016 07:14:01 > Task 840935 changed to 2016-07-20 06:30:00 (GMT)
+13.07.2016 07:14:01 > Update Campaign Time Query 5 update task set TaskInitiateDate='2016-07-20 12:00:00', TaskGMDate='2016-07-20 06:30:00' where TaskID=840935
+13.07.2016 07:14:01 > Task 840936 changed to 2016-07-21 06:30:00 (GMT)
+13.07.2016 07:14:01 > Update Campaign Time Query 5 update task set TaskInitiateDate='2016-07-21 12:00:00', TaskGMDate='2016-07-21 06:30:00' where TaskID=840936
+13.07.2016 07:14:01 > Task 840937 changed to 2016-07-22 06:30:00 (GMT)
+13.07.2016 07:14:01 > Update Campaign Time Query 5 update task set TaskInitiateDate='2016-07-22 12:00:00', TaskGMDate='2016-07-22 06:30:00' where TaskID=840937
+13.07.2016 07:14:01 > Task 840938 changed to 2016-07-25 06:30:00 (GMT)
+13.07.2016 07:14:01 > Update Campaign Time Query 5 update task set TaskInitiateDate='2016-07-25 12:00:00', TaskGMDate='2016-07-25 06:30:00' where TaskID=840938
+13.07.2016 07:14:01 > Task 840939 changed to 2016-07-26 06:30:00 (GMT)
+13.07.2016 07:14:01 > Update Campaign Time Query 5 update task set TaskInitiateDate='2016-07-26 12:00:00', TaskGMDate='2016-07-26 06:30:00' where TaskID=840939
+13.07.2016 07:14:01 > Task 840940 changed to 2016-07-27 06:30:00 (GMT)
+13.07.2016 07:14:01 > Update Campaign Time Query 5 update task set TaskInitiateDate='2016-07-27 12:00:00', TaskGMDate='2016-07-27 06:30:00' where TaskID=840940
+13.07.2016 07:14:01 > Task 840941 changed to 2016-07-28 06:30:00 (GMT)
+13.07.2016 07:14:01 > Update Campaign Time Query 5 update task set TaskInitiateDate='2016-07-28 12:00:00', TaskGMDate='2016-07-28 06:30:00' where TaskID=840941
+13.07.2016 07:16:01 > mbox: Resource id #10
+13.07.2016 07:16:01 > imap check: 0
+13.07.2016 07:16:01 > msgs count: 0
+13.07.2016 07:16:01 > imap_close
+13.07.2016 07:16:01 > found 0 for schedule changing

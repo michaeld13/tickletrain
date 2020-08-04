@@ -1,0 +1,90 @@
+.outtaHere {
+	position:absolute;
+	left:-3000px;
+}
+/* Selects */
+.selectArea {
+	position: relative;
+	height: 22px;
+	float:left;
+	color:#9d9d9d;
+	font-size:13px;
+	line-height:22px;
+	margin:0 7px 0 0;
+}
+.selectArea .left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:8px;
+	height:100%;
+	background: url(../images/select_left.png) no-repeat;
+	display: block;
+}
+.selectArea a.selectButton {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width:100%;
+	height:100%;
+	background: url(../images/select_button.png) no-repeat 100% 0;
+	outline:none;
+}
+.selectArea .center{
+	height: 22px;
+	line-height:22px;
+	display:block;
+	white-space:nowrap;
+	overflow:hidden;
+	margin:0 18px 0 8px;
+	background: url(../images/select_center.gif) repeat-x;
+	outline:none;
+}
+/*Selects drop-down*/
+.optionsDivInvisible,
+.optionsDivVisible {
+	position: absolute;
+	background-color: #fff;
+	display: block;
+	z-index: 1200;
+	font-size: 12px;
+	line-height:15px;
+	margin:-3px 0 0;
+}
+.optionsDivScroll ul {
+	height: 190px;
+	overflow: auto !important;
+}
+.optionsDivInvisible {display: none;}
+.optionsDivVisible ul {
+	margin:0;
+	padding:5px 2px 2px;
+	border:solid #d7d7d7;
+	border-width:0 1px 1px;
+	overflow:hidden;
+	list-style: none;
+}
+.optionsDivVisible ul li {
+	float:left;
+	width:100%;
+}
+.optionsDivVisible a {
+	color: #6d6b6b;
+	overflow:hidden;
+	text-decoration: none;
+	display: block;
+	height:1%;
+	padding: 2px 4px;
+}
+.optionsDivVisible a:hover {
+	background-color: #9d9d9d;
+	color: #fff;
+	text-decoration:none;
+}
+span.error {color:red; z-index: 999;display: block;}
+input[type=submit],
+input[type=button],
+button:focus
+{
+    outline: none;    
+}
