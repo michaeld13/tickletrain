@@ -725,7 +725,7 @@ if(false)
             $mail->Port = '25'; // set the SMTP server port
             $mail->SMTPKeepAlive = false;                  // SMTP connection will not close after each email sent     
             $mail->Username = "ticklein@tickletrain.com";     // SMTP server username
-            $mail->Password = 'change88q1w2e3r4';     // SMTP server password
+            $mail->Password = 'o3Lq&93x';     // SMTP server password
             $mail->SMTPAuth = true;                  // enable SMTP authentication        
             $mail->SMTPSecure = '';
             $mail->SMTPAutoTLS = false;                        // Enable TLS encryption, `ssl` also accepted

@@ -1661,11 +1661,6 @@ class TickleTrain extends Tickle_Validate_Var {
 				$TApprove = $task['TTApprove'];
 				$IsApproved = $task['Approve'];
 				$IsPaused = $task['Pause'];
-						
-				
-
-
-
 
 				$txt= ($task['FollowTickleTrainID'] == 0 )?$task['TickleMailContent']:$task['TickleMailFollowContent'];
 			
@@ -1709,9 +1704,6 @@ class TickleTrain extends Tickle_Validate_Var {
 		  							<div class='col-sm-10'><p class='h-detail'>".$task['TaskInitiateDate']."</p></div>
 								</div>
 							</div><hr>";
-
-
-
 
 
 				$body.='<div class="p-item">'.$Message_Header.trim($txt).'</div>';
@@ -1931,12 +1923,6 @@ class TickleTrain extends Tickle_Validate_Var {
 
 					if(!empty($row)){
 
-						if(!empty(trim($_POST['comment']))){
-							$query = "INSERT INTO `comments`(`MailID`, `TickleTrainID`, `TickleID`, `comment_by`, `comment`) VALUES (".$row['MailID'].",'".$row['TickleTrainID']."',".$input['TickleID'].",'owner','".$_POST['comment']."')";
-							mysqli_query($db->conn,$query);
-
-						}
-
 						if(isset($_FILES['files']) && !empty($row['RawPath']) ){
 
 						    $errors= array();
@@ -1967,7 +1953,26 @@ class TickleTrain extends Tickle_Validate_Var {
 							
 						    foreach ($_FILES['files']['name'] as $key => $image) { 
 
-						       	if(!empty($image)){  
+						       	if(!empty($image)){
+
+						       		$basepath = preg_replace("/\.txt$/i", "/", $row['RawPath']);
+
+
+
+						       		$usedSpace = $this->getAvailableSpace($basepath,$attachments);
+						       		
+						       		// echo round($usedSpace/1000000);
+						       		// echo "<br>";
+						       		// echo round((100000000 - $usedSpace)/1000000);
+
+						       		// die;
+						       		$t = $usedSpace+$input['files_size'];
+
+						       		if( ($usedSpace >= 10000000) || ($t >= 10000000)){
+						       			$res =  ['status' => 0,'message'=>"We're sorry, your files are over the maximum file size allowed."];
+										return json_encode($res);
+						       		}
+
 
 						   	      	$file_name = $image;
 							 	    $file_size =$_FILES['files']['size'][$key];
@@ -1979,17 +1984,14 @@ class TickleTrain extends Tickle_Validate_Var {
 							 		$extensions = array("gif", "jpeg", "jpg","png","pdf","doc","docx","txt","rtf","bmp","psd","zip","rar","ppt","pptx","cdr");
 							 	    $allow_type= array("image/jpeg","image/jpg","image/png");
 								      								
-							 		$imageArr=explode('.',$file_name);
-							 		$randimg =rand(1000,9999);
-							 		$new_name=time().$randimg.'.'.$imageArr[1];
-								
-									$basepath = preg_replace("/\.txt$/i", "/", $row['RawPath']);
-							 		
-									if(move_uploaded_file($tmp_name,$basepath.$new_name)) {
-										
+							 		// $imageArr=explode('.',$file_name);
+							 		// $randimg =rand(1000,9999);
+							 		// $new_name=time().$randimg.'.'.$imageArr[1];
+															 		
+									if(move_uploaded_file($tmp_name,$basepath.$file_name)) {
 									}
 									
-							 		$new_img_array[] = $new_name;
+							 		$new_img_array[] = $file_name;
 									 
 						       	}
 							}
@@ -1999,6 +2001,13 @@ class TickleTrain extends Tickle_Validate_Var {
 							
 					        // Ppdate Email Content 
 							mysqli_query($db->conn,"update user_mail set attachments='".implode(',',$atta__)."' where MailID='" . $MailID . "' ");
+						}
+
+
+						if(!empty(trim($_POST['comment']))){
+							$query = "INSERT INTO `comments`(`MailID`, `TickleTrainID`, `TickleID`, `comment_by`, `comment`) VALUES (".$row['MailID'].",'".$row['TickleTrainID']."',".$input['TickleID'].",'owner','".$_POST['comment']."')";
+							mysqli_query($db->conn,$query);
+
 						}
 
 					}
@@ -2014,6 +2023,24 @@ class TickleTrain extends Tickle_Validate_Var {
 
 		return json_encode($res);
 		# code...
+	}
+
+
+
+	public function getAvailableSpace($path,$images){
+
+		$totalsize = 0;
+
+		if(!empty($images)){
+
+			foreach ($images as $key => $image){
+				$filename = $path.$image;
+				$sizesss = @filesize($filename);
+				$totalsize = $totalsize + $sizesss;
+			}
+		}
+
+		return $totalsize;
 	}
 	
 

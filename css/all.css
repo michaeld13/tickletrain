@@ -2010,6 +2010,7 @@ ul.thumbnail-ul-mailattach li {
 .thumbnail-ul-mailattach li span {
     margin-top: 15px;
     float: left;
+	word-break: break-word;
 }
 
 .w3-border {

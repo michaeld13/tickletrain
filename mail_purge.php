@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 $ImapServerName = "{mail.tickletrain.com:143/imap/notls}INBOX.Read"; // For a IMAP connection    (PORT 143)
 $ImapUserName = "ticklein@tickletrain.com";
-$ImapPassWord = "change88q1w2e3r4";
+$ImapPassWord = "o3Lq&93x";
 $ImapMove = "INBOX.Read";
 $RootFolder = "";
 

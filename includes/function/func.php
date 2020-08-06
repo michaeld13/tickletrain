@@ -582,7 +582,7 @@ function SendMail($to, $from, $subj, $text, $method = 'mail', $isHtml = true, $b
         $mail->SMTPKeepAlive = false;                  // SMTP connection will not close after each email sent
         $mail->SMTPAuth = false;                  // enable SMTP authentication        
         $mail->Username = "ticklein@tickletrain.com";     // SMTP server username
-        $mail->Password = 'change88q1w2e3r4';     // SMTP server password
+        $mail->Password = 'o3Lq&93x';     // SMTP server password
         $mail->SMTPAuth = true;                  // enable SMTP authentication        
         $mail->SMTPSecure = '';
         $mail->SMTPAutoTLS = false;                        // Enable TLS encryption, `ssl` also accepted
@@ -600,7 +600,7 @@ function SendMail($to, $from, $subj, $text, $method = 'mail', $isHtml = true, $b
     }
 
     $mail->AddAddress($to);
-    $mail->SetFrom($from, "");
+    $mail->SetFrom($from, "TickleTrain");
     foreach ($bcc as $email) {
         $mail->AddBCC($email);
     }
@@ -672,7 +672,7 @@ function prepareMailer($user, &$mail) {
         $mail->SMTPKeepAlive = false;                  // SMTP connection will not close after each email sent
         $mail->SMTPAuth = false;                  // enable SMTP authentication        
         $mail->Username = "ticklein@tickletrain.com";     // SMTP server username
-        $mail->Password = 'change88q1w2e3r4';     // SMTP server password
+        $mail->Password = 'o3Lq&93x';     // SMTP server password
         $mail->SMTPAuth = true;                  // enable SMTP authentication        
         $mail->SMTPSecure = '';
         $FromEmailid = $user['EmailID'];

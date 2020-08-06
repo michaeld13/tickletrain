@@ -542,7 +542,7 @@ function SendMail($to, $from, $subj, $text, $method = 'mail', $isHtml = true, $b
         $mail->Port = 25;                    // set the SMTP server port
         $mail->Host = "mail.tickletrain.com"; // SMTP server
         $mail->Username = "ticklein@tickletrain.com";     // SMTP server username
-        $mail->Password = "change88q1w2e3r4";            // SMTP server password
+        $mail->Password = "o3Lq&93x";            // SMTP server password
     }
     if ($method == 'sendmail') {
         $mail->IsSendmail();
